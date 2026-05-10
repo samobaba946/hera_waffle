@@ -28,7 +28,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Bitter"],
       emoji: "🧇",
-      image: "https://images.pexels.com/photos/5555534/pexels-photo-5555534.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🍫", name: "Bitter Çikolata" }
@@ -42,7 +42,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Sütlü"],
       emoji: "🧇",
-      image: "https://images.pexels.com/photos/17057343/pexels-photo-17057343.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1647210391533-5fe30109e94a?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🍫", name: "Sütlü Çikolata" }
@@ -56,7 +56,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Sütlü", "Karamel"],
       emoji: "🍯",
-      image: "https://images.pexels.com/photos/5711231/pexels-photo-5711231.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1441633980922-d18ca151ee64?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🍫", name: "Sütlü Çikolata" },
         { icon: "🍯", name: "Karamel" }
@@ -70,7 +70,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Frambuaz"],
       emoji: "🫐",
-      image: "https://images.pexels.com/photos/221083/pexels-photo-221083.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1576615278693-f8e095e37e01?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🫐", name: "Frambuaz" }
@@ -84,7 +84,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Çilek"],
       emoji: "🍓",
-      image: "https://images.pexels.com/photos/28919127/pexels-photo-28919127.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🍓", name: "Çilek" }
@@ -98,7 +98,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Sütlü", "Bitter"],
       emoji: "🍫",
-      image: "https://images.pexels.com/photos/28919124/pexels-photo-28919124.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1562513872-634b8fae6dbe?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🍫", name: "Sütlü Çikolata" },
         { icon: "🍫", name: "Bitter Çikolata" }
@@ -112,7 +112,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Bubble"],
       emoji: "🫧",
-      image: "https://images.pexels.com/photos/27008492/pexels-photo-27008492.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1641463495236-ff3a7269c76d?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🫧", name: "Bubble" }
@@ -126,7 +126,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Karamel"],
       emoji: "🍪",
-      image: "https://images.pexels.com/photos/25067704/pexels-photo-25067704.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1647209933551-eb2e758e1b98?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
         { icon: "🍯", name: "Lotus Karamel" },
@@ -141,7 +141,7 @@
       formats: WAFFLE_FORMATS,
       tags: ["Bubble", "Frambuaz"],
       emoji: "🫧",
-      image: "https://images.pexels.com/photos/7440338/pexels-photo-7440338.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.unsplash.com/photo-1558584724-0e4d32ca55a4?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🫧", name: "Bubble" },
         { icon: "🫐", name: "Frambuaz" }
