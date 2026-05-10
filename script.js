@@ -619,7 +619,7 @@
       tags: ["Çilek", "Kremşanti"],
       emoji: "🥐",
       comingSoon: true,
-      image: "https://images.pexels.com/photos/3724443/pexels-photo-3724443.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/30380508/pexels-photo-30380508.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🥐", name: "Kruvasan" },
         { icon: "🍓", name: "Çilek" },
@@ -635,7 +635,7 @@
       tags: ["Orman Meyveli", "Kremalı"],
       emoji: "🥐",
       comingSoon: true,
-      image: "https://images.pexels.com/photos/5419336/pexels-photo-5419336.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/10560686/pexels-photo-10560686.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🥐", name: "Kruvasan" },
         { icon: "🫐", name: "Orman Meyveleri" },
@@ -651,7 +651,7 @@
       tags: ["Çikolata", "Kremşanti"],
       emoji: "🥐",
       comingSoon: true,
-      image: "https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/20819705/pexels-photo-20819705.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🥐", name: "Kruvasan" },
         { icon: "🍫", name: "Sütlü Çikolata" },
@@ -667,7 +667,7 @@
       tags: ["Muz", "Çikolata"],
       emoji: "🥐",
       comingSoon: true,
-      image: "https://images.pexels.com/photos/4686818/pexels-photo-4686818.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/20819720/pexels-photo-20819720.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🥐", name: "Kruvasan" },
         { icon: "🍌", name: "Muz" },
