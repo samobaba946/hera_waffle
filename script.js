@@ -699,7 +699,7 @@
       price: "230 TL",
       tags: ["Fırsat", "İkili"],
       emoji: "🎁",
-      image: "https://images.pexels.com/photos/23708983/pexels-photo-23708983.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "img/kampanya/waffle-limonata.jpg",
       ingredients: [
         { icon: "🧇", name: "Bardak Waffle (1 adet)" },
         { icon: "🍋", name: "Limonata (1 bardak)" }
