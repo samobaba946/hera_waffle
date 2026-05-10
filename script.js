@@ -730,29 +730,29 @@
     });
   });
 
-  /* ---------- STRAWBERRY RAIN (Prenses özel efekti) ---------- */
-  (function injectStrawberryStyles() {
-    if (document.getElementById("strawberry-rain-styles")) return;
+  /* ---------- EMOJI RAIN (waffle malzemelerine göre yağmur efekti) ---------- */
+  (function injectEmojiRainStyles() {
+    if (document.getElementById("emoji-rain-styles")) return;
     const style = document.createElement("style");
-    style.id = "strawberry-rain-styles";
+    style.id = "emoji-rain-styles";
     style.textContent = `
-      .strawberry-rain-layer {
+      .emoji-rain-layer {
         position: fixed;
         inset: 0;
         pointer-events: none;
         z-index: 99999;
         overflow: hidden;
       }
-      .strawberry-rain-layer span {
+      .emoji-rain-layer span {
         position: absolute;
         top: -10vh;
         will-change: transform, opacity;
-        animation-name: strawberryFall;
+        animation-name: emojiFall;
         animation-timing-function: cubic-bezier(.4,.05,.7,1);
         animation-fill-mode: forwards;
         filter: drop-shadow(0 4px 6px rgba(107, 24, 32, 0.25));
       }
-      @keyframes strawberryFall {
+      @keyframes emojiFall {
         0%   { transform: translate3d(0, 0, 0) rotate(0deg);                    opacity: 0; }
         8%   { opacity: 1; }
         100% { transform: translate3d(var(--drift), 115vh, 0) rotate(var(--rot)); opacity: 1; }
@@ -761,15 +761,17 @@
     document.head.appendChild(style);
   })();
 
-  function rainStrawberries(count) {
+  function rainEmojis(emojis, count) {
+    if (!emojis || !emojis.length) return;
     const COUNT = count || 45;
     const layer = document.createElement("div");
-    layer.className = "strawberry-rain-layer";
+    layer.className = "emoji-rain-layer";
     document.body.appendChild(layer);
 
     for (let i = 0; i < COUNT; i++) {
       const s = document.createElement("span");
-      s.textContent = "🍓";
+      // Rastgele bir emoji seç → her malzeme dengeli karışır
+      s.textContent = emojis[Math.floor(Math.random() * emojis.length)];
       const left   = Math.random() * 100;            // vw
       const size   = 18 + Math.random() * 28;        // px
       const dur    = 2.6 + Math.random() * 2.6;      // s
@@ -854,9 +856,10 @@
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
 
-    // Prenses → çilek yağmuru 🍓
-    if (item.id === "w-prenses") {
-      rainStrawberries();
+    // Waffle kategorisi → kendi malzeme emojilerini yağdır 🧇
+    if (item.category === "waffle" && item.ingredients && item.ingredients.length) {
+      const emojis = item.ingredients.map((ing) => ing.icon).filter(Boolean);
+      rainEmojis(emojis);
     }
   }
 
