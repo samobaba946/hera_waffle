@@ -14,82 +14,9 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%236b1820%22/><text x=%2232%22 y=%2244%22 font-family=%22Georgia,serif%22 font-size=%2240%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%23faf3e7%22>H</text></svg>" />
 
-  <style>
-    /* =====================================================
-       HERA WAFFLE — STYLES 
-    ===================================================== */
-    :root {
-      --burgundy-deep: #4a0e14;
-      --burgundy: #6b1820;
-      --burgundy-mid: #7d2230;
-      --burgundy-light: #8b2a35;
-      --cream: #faf3e7;
-      --cream-warm: #f5e9d4;
-      --paper: #fffbf5;
-      --gold: #d4a045;
-      --gold-light: #e8b860;
-      --gold-deep: #a87a26;
-      --ink: #2a0a0e;
-      --ink-soft: #4a2a30;
-      --muted: #8a6a72;
-      --font-display: "Fraunces", "Playfair Display", Georgia, serif;
-      --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --radius-sm: 10px;
-      --radius-md: 18px;
-      --radius-lg: 28px;
-      --radius-xl: 36px;
-      --shadow-sm: 0 2px 8px rgba(74, 14, 20, 0.06);
-      --shadow-md: 0 12px 28px -8px rgba(74, 14, 20, 0.18);
-      --shadow-lg: 0 28px 60px -12px rgba(74, 14, 20, 0.32);
-      --shadow-xl: 0 40px 80px -20px rgba(74, 14, 20, 0.5);
-      --container: 1240px;
-      --gutter: clamp(1.25rem, 4vw, 3rem);
-      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: var(--font-body);
-      background: var(--paper);
-      color: var(--ink);
-      line-height: 1.55;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; display: block; }
-    button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-    a { color: inherit; text-decoration: none; }
-
-    /* ... (Tüm CSS'iniz aynı kalıyor, sadece en sona çilek animasyonunu ekliyorum) ... */
-
-    .strawberry-rain {
-      position: fixed;
-      z-index: 9999;
-      user-select: none;
-      pointer-events: none;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      animation: strawberryFall linear forwards;
-    }
-
-    @keyframes strawberryFall {
-      to {
-        transform: translateY(110vh) rotate(720deg) translateX(var(--sway));
-        opacity: 0;
-      }
-    }
-
-    /* ====================== ORİJİNAL CSS'İNİZ DEVAM EDİYOR ====================== */
-    .eyebrow { display: inline-block; font-family: var(--font-body); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-deep); }
-    .section-title { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 5.5vw, 4.2rem); line-height: 1.05; color: var(--burgundy); letter-spacing: -0.02em; }
-    .section-title em { font-style: italic; font-weight: 400; color: var(--gold-deep); }
-
-    /* Header, Hero, Menu vb. stilleriniz (kısaltıldı, orijinal kodunuzdaki gibi kalıyor) */
-    /* ... Tüm orijinal CSS ... */
-
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- ============== HEADER ============== -->
   <header class="site-header">
@@ -101,6 +28,7 @@
           <span class="logo-bottom">Waffle</span>
         </span>
       </a>
+
       <nav class="quick-nav" aria-label="Birincil">
         <a href="#menu">Menü</a>
         <a href="#hakkimizda">Hakkımızda</a>
@@ -111,45 +39,213 @@
 
   <!-- ============== HERO ============== -->
   <section class="hero">
-    <!-- ... (Hero içeriği aynı) ... -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grain"></div>
+    </div>
+
     <div class="hero-content">
       <span class="eyebrow" data-anim="1">✦ &nbsp;Tatlı Anlar Burada Başlar&nbsp; ✦</span>
       <h1 class="hero-title" data-anim="2">
         <span class="line"><em>Hera</em></span>
         <span class="line">Waffle</span>
       </h1>
-      <p class="hero-subtitle" data-anim="3">El yapımı waffle çeşitleri, özenle demlenen kahveler ve serinletici içecekler.</p>
+      <p class="hero-subtitle" data-anim="3">
+        El yapımı waffle çeşitleri, özenle demlenen kahveler ve serinletici içecekler.
+        Her lokmada özenle hazırlanmış bir tatlı anı sizi bekliyor.
+      </p>
       <div class="hero-cta" data-anim="4">
-        <a href="#menu" class="btn-primary">Menüyü Keşfet</a>
+        <a href="#menu" class="btn-primary">Menüyü Keşfet
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
         <a href="#iletisim" class="btn-ghost">İletişim</a>
       </div>
+    </div>
+
+    <div class="float-cup cup-left" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,30 L75,30 L70,80 Q70,88 62,88 L33,88 Q25,88 25,80 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M75,40 Q90,40 90,52 Q90,64 75,64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M35,18 Q35,12 40,12 M48,18 Q48,12 53,12 M61,18 Q61,12 66,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <text x="48" y="62" font-family="Fraunces, serif" font-size="14" font-style="italic" text-anchor="middle" fill="currentColor">coffee</text>
+      </svg>
+    </div>
+    <div class="float-cup cup-right" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,30 L75,30 L70,80 Q70,88 62,88 L33,88 Q25,88 25,80 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M75,40 Q90,40 90,52 Q90,64 75,64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M35,18 Q35,12 40,12 M48,18 Q48,12 53,12 M61,18 Q61,12 66,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <text x="48" y="62" font-family="Fraunces, serif" font-size="14" font-style="italic" text-anchor="middle" fill="currentColor">coffee</text>
+      </svg>
     </div>
   </section>
 
   <!-- ============== MENU SECTION ============== -->
   <section id="menu" class="menu-section">
-    <!-- ... kategori tabları aynı ... -->
-    <div class="menu-grid" id="menuGrid"></div>
+    <div class="section-header">
+      <span class="eyebrow">— &nbsp;Menümüz&nbsp; —</span>
+      <h2 class="section-title">Lezzet <em>Yolculuğu</em></h2>
+      <p class="section-sub">Bir kategori seçin, ardından bir ürüne tıklayarak detaylarını görüntüleyin.</p>
+    </div>
+
+    <div class="category-tabs" role="tablist" aria-label="Menü kategorileri">
+      <button class="cat-tab is-active" data-category="waffle" role="tab" aria-selected="true" aria-controls="menuGrid">
+        <span class="cat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="3"/>
+            <line x1="9" y1="3" x2="9" y2="21"/>
+            <line x1="15" y1="3" x2="15" y2="21"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="3" y1="15" x2="21" y2="15"/>
+          </svg>
+        </span>
+        <span class="cat-text">
+          <span class="cat-name">Waffle</span>
+          <span class="cat-meta">El Yapımı</span>
+        </span>
+      </button>
+
+      <button class="cat-tab" data-category="kahve" role="tab" aria-selected="false" aria-controls="menuGrid">
+        <span class="cat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h14v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/>
+            <path d="M17 10h2a3 3 0 0 1 0 6h-2"/>
+            <line x1="7" y1="3" x2="7" y2="5"/>
+            <line x1="11" y1="3" x2="11" y2="5"/>
+            <line x1="15" y1="3" x2="15" y2="5"/>
+          </svg>
+        </span>
+        <span class="cat-text">
+          <span class="cat-name">Kahve</span>
+          <span class="cat-meta">Taze Demleme</span>
+        </span>
+      </button>
+
+      <button class="cat-tab" data-category="soguk" role="tab" aria-selected="false" aria-controls="menuGrid">
+        <span class="cat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 7h14l-1.5 13a2 2 0 0 1-2 1.8H8.5a2 2 0 0 1-2-1.8L5 7z"/>
+            <line x1="3" y1="7" x2="21" y2="7"/>
+            <path d="M9 4l1.5 3M15 4l-1.5 3"/>
+            <line x1="10" y1="11" x2="10" y2="17"/>
+            <line x1="14" y1="11" x2="14" y2="17"/>
+          </svg>
+        </span>
+        <span class="cat-text">
+          <span class="cat-name">Soğuk İçecekler</span>
+          <span class="cat-meta">Serinletici</span>
+        </span>
+      </button>
+
+      <button class="cat-tab" data-category="cay" role="tab" aria-selected="false" aria-controls="menuGrid">
+        <span class="cat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 9h12v8a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V9z"/>
+            <path d="M17 11h2a2.5 2.5 0 0 1 0 5h-2"/>
+            <path d="M8 6c0-1.5 1-1.5 1-3M12 6c0-1.5 1-1.5 1-3"/>
+          </svg>
+        </span>
+        <span class="cat-text">
+          <span class="cat-name">Çay</span>
+          <span class="cat-meta">Demlik &amp; Oralet</span>
+        </span>
+      </button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid" role="tabpanel" aria-live="polite">
+      <!-- Items injected by JS -->
+    </div>
   </section>
 
-  <!-- Hakkımızda ve Footer aynı kalıyor -->
-  <section id="hakkimizda" class="about-strip"> ... </section>
-  <footer id="iletisim" class="site-footer"> ... </footer>
+  <!-- ============== ABOUT / SIGNATURE STRIP ============== -->
+  <section id="hakkimizda" class="about-strip">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="eyebrow">Hakkımızda</span>
+        <h2 class="section-title">Her Lokmada <em>Özen</em></h2>
+        <p>
+          Hera Waffle olarak, en taze malzemeleri ustalıkla buluşturuyoruz.
+          Belçika usulü waffle hamurumuz her gün taze hazırlanır;
+          kahvelerimiz seçkin çekirdeklerden, içeceklerimiz ise mevsim meyvelerinden yapılır.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">9</span>
+            <span class="stat-label">Waffle Modeli</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">15</span>
+            <span class="stat-label">Kahve Türü</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Taze Malzeme</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer id="iletisim" class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">H</span>
+          <span class="logo-text">
+            <span class="logo-top">Hera</span>
+            <span class="logo-bottom">Waffle</span>
+          </span>
+        </div>
+        <p>Tatlı anlarınıza eşlik etmekten mutluluk duyuyoruz.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <p>📍 &nbsp;Adresimiz</p>
+        <p>✉️ &nbsp;info@herawaffle.com</p>
+        <p>📩 &nbsp;Şikayet ve önerileriniz için <a href="https://www.instagram.com/herawafflecafe/" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light);text-decoration:underline;">Instagram adresimize</a> ulaşın.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Çalışma Saatleri</h4>
+        <p>Her gün: 11:00 – 23:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bizi Takip Edin</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/herawafflecafe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Hera Waffle. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 
   <!-- ============== MODAL ============== -->
-  <div class="modal" id="itemModal" aria-hidden="true" role="dialog">
+  <div class="modal" id="itemModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-backdrop" data-close></div>
     <div class="modal-card">
-      <button class="modal-close" data-close>✕</button>
+      <button class="modal-close" data-close aria-label="Kapat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
       <div class="modal-image-wrap">
         <div class="modal-image-fallback" id="modalImageFallback"></div>
         <img id="modalImage" src="" alt="" />
         <span class="modal-price" id="modalPrice"></span>
       </div>
+
       <div class="modal-body">
         <span class="eyebrow modal-eyebrow" id="modalEyebrow"></span>
         <h3 class="modal-title" id="modalTitle"></h3>
         <p class="modal-desc" id="modalDesc"></p>
+
         <div class="modal-section">
           <h4 class="modal-section-title">İçindekiler</h4>
           <div class="modal-ingredients" id="modalIngredients"></div>
@@ -158,141 +254,6 @@
     </div>
   </div>
 
-  <script>
-    (function () {
-      "use strict";
-
-      const WAFFLE_FORMATS = [
-        { name: "Bardak (2 tane)", price: "200 TL" },
-        { name: "Kova", price: "150 TL" }
-      ];
-
-      const MENU = [ /* ... TÜM MENÜ VERİLERİNİZ (orijinal haliyle aynı) ... */ 
-        // (Buraya orijinal MENU dizinizin tamamını yapıştırın)
-        // ... (kısaltıldı, orijinal dosyanızdaki MENU array'inin tamamı buraya gelecek)
-      ];
-
-      // DOM Elements
-      const grid = document.getElementById("menuGrid");
-      const modal = document.getElementById("itemModal");
-      const modalImage = document.getElementById("modalImage");
-      const modalImageFallback = document.getElementById("modalImageFallback");
-      const modalPrice = document.getElementById("modalPrice");
-      const modalEyebrow = document.getElementById("modalEyebrow");
-      const modalTitle = document.getElementById("modalTitle");
-      const modalDesc = document.getElementById("modalDesc");
-      const modalIngredients = document.getElementById("modalIngredients");
-
-      const categoryLabel = {
-        waffle: "Waffle",
-        kahve: "Kahve",
-        soguk: "Soğuk İçecek",
-        cay: "Çay"
-      };
-
-      function escapeHTML(str) {
-        return String(str).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-      }
-
-      function priceChipHTML(item) {
-        if (item.formats && item.formats.length) {
-          const nums = item.formats.map(f => f.price.replace(/\s*TL\s*/i, "").trim()).join(" / ");
-          return `<span class="card-price two-line"><span class="price-main">${escapeHTML(nums)} TL</span><span class="price-sub">Bardak / Kova</span></span>`;
-        }
-        return `<span class="card-price">${escapeHTML(item.price)}</span>`;
-      }
-
-      /* ========== ÇİLEK YAĞMURU FONKSİYONU ========== */
-      function createStrawberryRain() {
-        const duration = 4500;
-        document.querySelectorAll('.strawberry-rain').forEach(el => el.remove());
-
-        for (let i = 0; i < 85; i++) {
-          const s = document.createElement('div');
-          s.className = 'strawberry-rain';
-          s.textContent = '🍓';
-          s.style.fontSize = `${Math.random() * 28 + 24}px`;
-          s.style.left = `${Math.random() * 100}vw`;
-          s.style.top = `-${Math.random() * 80}px`;
-          s.style.opacity = Math.random() * 0.6 + 0.65;
-          s.style.transform = `rotate(${Math.random() * 360}deg)`;
-          s.style.animationDuration = `${Math.random() * 2 + 2.8}s`;
-          s.style.animationDelay = `${Math.random() * 1}s`;
-          s.style.setProperty('--sway', `${Math.random() * 90 - 45}px`);
-          document.body.appendChild(s);
-
-          setTimeout(() => s.remove(), duration + 3000);
-        }
-      }
-
-      function renderMenu(category) {
-        const items = MENU.filter(it => it.category === category);
-        grid.innerHTML = "";
-
-        items.forEach((item, i) => {
-          const card = document.createElement("article");
-          card.className = "menu-card";
-          card.style.animationDelay = `${0.06 * i}s`;
-          card.setAttribute("role", "button");
-          card.setAttribute("tabindex", "0");
-
-          // ... card innerHTML (orijinalinizdeki gibi) ...
-
-          card.addEventListener("click", () => openModal(item));
-          grid.appendChild(card);
-        });
-      }
-
-      function openModal(item) {
-        modalEyebrow.textContent = categoryLabel[item.category] || "";
-        modalTitle.textContent = item.name;
-        modalDesc.textContent = item.desc;
-
-        if (item.formats && item.formats.length) {
-          const nums = item.formats.map(f => f.price.replace(/\s*TL\s*/i, "").trim()).join(" / ");
-          modalPrice.textContent = `${nums} TL`;
-        } else {
-          modalPrice.textContent = item.price;
-        }
-
-        modalImage.src = item.image;
-        modalImage.alt = item.name;
-
-        // === PRENSES ÇİLEK YAĞMURU ===
-        if (item.id === "w-prenses") {
-          createStrawberryRain();
-        }
-
-        // Modal içeriği (ingredients vs.)
-        let html = "";
-        if (item.formats && item.formats.length) {
-          html += `<div class="modal-formats">` + item.formats.map(f => `
-            <div class="format-chip">
-              <span class="format-chip-name">${f.name}</span>
-              <span class="format-chip-price">${f.price}</span>
-            </div>`).join("") + `</div>`;
-        }
-        html += item.ingredients.map(ing => `
-          <span class="ingredient-chip">
-            <span class="ing-icon">${ing.icon}</span>
-            <span>${ing.name}</span>
-          </span>`).join("");
-        modalIngredients.innerHTML = html;
-
-        modal.classList.add("is-open");
-      }
-
-      // Modal kapatma
-      modal.addEventListener("click", e => {
-        if (e.target.closest("[data-close]")) modal.classList.remove("is-open");
-      });
-      document.addEventListener("keydown", e => {
-        if (e.key === "Escape" && modal.classList.contains("is-open")) modal.classList.remove("is-open");
-      });
-
-      // Init
-      renderMenu("waffle");
-    })();
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
