@@ -87,7 +87,7 @@
       image: "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
-        { icon: "❤️", name: "Çilek" }
+        { icon: "🍓", name: "Çilek" }
       ]
     },
     {
@@ -406,7 +406,7 @@
       price: "100 TL",
       tags: ["Spesyal", "Doğal"],
       emoji: "🌿",
-      image: "https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/4315984/pexels-photo-4315984.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🌿", name: "Kuzu Kulağı" },
         { icon: "🍋", name: "Limon" },
@@ -422,7 +422,7 @@
       price: "70 TL",
       tags: ["Smoothie", "Çilek"],
       emoji: "🥤",
-      image: "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/775032/pexels-photo-775032.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍓", name: "Çilek" },
         { icon: "🍫", name: "Kakao" },
@@ -483,7 +483,7 @@
       price: "70 TL",
       tags: ["Kahve", "Buzlu"],
       emoji: "🧊",
-      image: "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/14761085/pexels-photo-14761085.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso" },
         { icon: "🥛", name: "Süt" },
@@ -499,7 +499,7 @@
       price: "40 TL",
       tags: ["Doğal", "Klasik"],
       emoji: "🍋",
-      image: "https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/2960894/pexels-photo-2960894.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍋", name: "Taze Limon" },
         { icon: "🌿", name: "Nane" },
@@ -514,7 +514,7 @@
       price: "40 TL",
       tags: ["Çilek", "Ferahlatıcı"],
       emoji: "🍓",
-      image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/102736/pexels-photo-102736.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍓", name: "Çilek" },
         { icon: "🍋", name: "Limon" },
