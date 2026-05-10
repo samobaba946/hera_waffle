@@ -157,7 +157,7 @@
       price: "70 TL",
       tags: ["Yoğun", "Klasik"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/26626461/pexels-photo-26626461.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso (30ml)" }
       ]
@@ -285,7 +285,7 @@
       price: "70 TL",
       tags: ["Geleneksel", "Klasik"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/9981613/pexels-photo-9981613.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Türk Kahvesi" },
         { icon: "💧", name: "Su" },
@@ -300,7 +300,7 @@
       price: "70 TL",
       tags: ["Geleneksel", "Yoğun"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/36535219/pexels-photo-36535219.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Dibek Kahvesi" },
         { icon: "🍫", name: "Kakao" },
@@ -315,7 +315,7 @@
       price: "70 TL",
       tags: ["Yöresel", "Kafeinsiz"],
       emoji: "🌰",
-      image: "https://images.unsplash.com/photo-1561882468-9110e03e0f78?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/9981720/pexels-photo-9981720.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🌰", name: "Menengiç" },
         { icon: "🥛", name: "Süt" }
@@ -329,7 +329,7 @@
       price: "70 TL",
       tags: ["Saray Usulü", "Baharatlı"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/36823333/pexels-photo-36823333.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Türk Kahvesi" },
         { icon: "✨", name: "Damla Sakızı" },
