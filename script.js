@@ -607,6 +607,73 @@
         { icon: "🍋", name: "Limon" },
         { icon: "🌹", name: "Kuşburnu" }
       ]
+    },
+
+    /* ============ KRUVASAN (Yakında) ============ */
+    {
+      id: "kr-cilek",
+      category: "kruvasan",
+      name: "Çilekli Kruvasan",
+      desc: "Tereyağlı katmanlı kruvasan, taze çilek ve kremşanti ile süslenmiş. Hafif, yumuşak, romantik bir lezzet.",
+      price: "Yakında",
+      tags: ["Çilek", "Kremşanti"],
+      emoji: "🥐",
+      comingSoon: true,
+      image: "https://images.pexels.com/photos/3724443/pexels-photo-3724443.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🥐", name: "Kruvasan" },
+        { icon: "🍓", name: "Çilek" },
+        { icon: "🍦", name: "Kremşanti" }
+      ]
+    },
+    {
+      id: "kr-orman-meyveli",
+      category: "kruvasan",
+      name: "Orman Meyveli Kruvasan",
+      desc: "Çıtır kruvasan, böğürtlen, frambuaz ve yaban mersini kreması ile dolu. Meyveli ve yoğun.",
+      price: "Yakında",
+      tags: ["Orman Meyveli", "Kremalı"],
+      emoji: "🥐",
+      comingSoon: true,
+      image: "https://images.pexels.com/photos/5419336/pexels-photo-5419336.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🥐", name: "Kruvasan" },
+        { icon: "🫐", name: "Orman Meyveleri" },
+        { icon: "🍦", name: "Vanilyalı Krema" }
+      ]
+    },
+    {
+      id: "kr-cikolatali",
+      category: "kruvasan",
+      name: "Çikolatalı Kruvasan",
+      desc: "Sıcacık tereyağlı kruvasan, yoğun sütlü çikolata ve kremşanti dolgu. Klasik favori.",
+      price: "Yakında",
+      tags: ["Çikolata", "Kremşanti"],
+      emoji: "🥐",
+      comingSoon: true,
+      image: "https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🥐", name: "Kruvasan" },
+        { icon: "🍫", name: "Sütlü Çikolata" },
+        { icon: "🍦", name: "Kremşanti" }
+      ]
+    },
+    {
+      id: "kr-muz-cikolata",
+      category: "kruvasan",
+      name: "Muzlu Çikolatalı Kruvasan",
+      desc: "Olgun muz dilimleri, bitter çikolata sosu ve kremşanti ile zenginleştirilmiş kruvasan.",
+      price: "Yakında",
+      tags: ["Muz", "Çikolata"],
+      emoji: "🥐",
+      comingSoon: true,
+      image: "https://images.pexels.com/photos/4686818/pexels-photo-4686818.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🥐", name: "Kruvasan" },
+        { icon: "🍌", name: "Muz" },
+        { icon: "🍫", name: "Bitter Çikolata" },
+        { icon: "🍦", name: "Kremşanti" }
+      ]
     }
   ];
 
@@ -669,13 +736,18 @@
         .map((t) => `<span class="card-tag">${escapeHTML(t)}</span>`)
         .join("");
 
+      const comingSoonBadge = item.comingSoon
+        ? `<div class="coming-soon-overlay" aria-hidden="true"><span class="coming-soon-text">YAKINDA</span></div>`
+        : "";
+
       card.innerHTML = `
-        <div class="card-image">
+        <div class="card-image${item.comingSoon ? " is-coming-soon" : ""}">
           <div class="card-image-fallback">
             <span class="fb-name">${escapeHTML(item.name)}</span>
             <span class="fb-tag">Hera Waffle</span>
           </div>
           <img src="${item.image}" alt="${escapeHTML(item.name)}" loading="lazy" />
+          ${comingSoonBadge}
           ${priceChipHTML(item)}
         </div>
         <div class="card-body">
