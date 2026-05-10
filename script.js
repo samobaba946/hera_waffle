@@ -587,7 +587,7 @@
       price: "20 TL",
       tags: ["Sağlıklı", "Hafif"],
       emoji: "🍃",
-      image: "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/8474187/pexels-photo-8474187.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍵", name: "Yeşil Çay" },
         { icon: "💧", name: "Sıcak Su" }
@@ -601,7 +601,7 @@
       price: "20 TL",
       tags: ["Aromalı", "Sıcak"],
       emoji: "🍎",
-      image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/8678927/pexels-photo-8678927.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍎", name: "Elma" },
         { icon: "🍋", name: "Limon" },
