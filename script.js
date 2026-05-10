@@ -674,6 +674,50 @@
         { icon: "🍫", name: "Bitter Çikolata" },
         { icon: "🍦", name: "Kremşanti" }
       ]
+    },
+
+    /* ============ KAMPANYA ============ */
+    {
+      id: "kmp-waffle-kahve",
+      category: "kampanya",
+      name: "Waffle + Türk Kahvesi",
+      desc: "Bir kova waffle yanında Türk kahvesi. Tatlının yanına geleneksel bir dokunuş — kampanya fiyatıyla.",
+      price: "220 TL",
+      tags: ["Fırsat", "İkili"],
+      emoji: "🎁",
+      image: "https://images.pexels.com/photos/5555534/pexels-photo-5555534.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🧇", name: "Bardak Waffle (1 adet)" },
+        { icon: "☕", name: "Türk Kahvesi (1 adet)" }
+      ]
+    },
+    {
+      id: "kmp-waffle-limonata",
+      category: "kampanya",
+      name: "Waffle + Limonata",
+      desc: "Sıcacık waffle yanında ev yapımı limonata. Yaz günlerine özel tatlı + ferah ikilisi.",
+      price: "230 TL",
+      tags: ["Fırsat", "İkili"],
+      emoji: "🎁",
+      image: "https://images.pexels.com/photos/28919130/pexels-photo-28919130.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🧇", name: "Bardak Waffle (1 adet)" },
+        { icon: "🍋", name: "Limonata (1 bardak)" }
+      ]
+    },
+    {
+      id: "kmp-2-waffle",
+      category: "kampanya",
+      name: "2 Kişilik Waffle Menü",
+      desc: "İki bardak waffle + iki içecek (kahve, çay veya limonata) tercihinizle. Birlikte daha tatlı.",
+      price: "380 TL",
+      tags: ["Fırsat", "Çiftler İçin"],
+      emoji: "💞",
+      image: "https://images.pexels.com/photos/27008492/pexels-photo-27008492.jpeg?auto=compress&cs=tinysrgb&w=900",
+      ingredients: [
+        { icon: "🧇", name: "Bardak Waffle (2 adet)" },
+        { icon: "🥤", name: "İçecek seçimi (2 adet)" }
+      ]
     }
   ];
 
