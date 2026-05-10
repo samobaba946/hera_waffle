@@ -391,7 +391,7 @@
       price: "100 TL",
       tags: ["Spesyal", "Meyveli"],
       emoji: "🌺",
-      image: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/17379797/pexels-photo-17379797.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🌺", name: "Hibiscus" },
         { icon: "🫐", name: "Orman Meyveleri" },
