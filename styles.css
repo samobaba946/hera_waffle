@@ -1154,3 +1154,23 @@ ul, ol { list-style: none; }
 
 /* Lock scroll when modal open */
 body.modal-open { overflow: hidden; }
+
+
+/* ========== PRENSES ÇİLEK YAĞMURU ========== */
+.strawberry-rain {
+  position: fixed;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  animation: strawberryFall linear forwards;
+}
+
+@keyframes strawberryFall {
+  to {
+    transform: translateY(110vh) rotate(720deg) translateX(var(--sway));
+    opacity: 0;
+  }
+}
+
+
