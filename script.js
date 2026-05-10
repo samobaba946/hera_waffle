@@ -214,7 +214,7 @@
       price: "70 TL",
       tags: ["Klasik", "Köpüklü"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso" },
         { icon: "🥛", name: "Süt" },
@@ -243,7 +243,7 @@
       price: "70 TL",
       tags: ["Dengeli", "Sütlü"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1494314671902-399b18174975?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/4860407/pexels-photo-4860407.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso" },
         { icon: "🥛", name: "Buharlı Süt" }
@@ -271,7 +271,7 @@
       price: "70 TL",
       tags: ["Ristretto", "Yoğun"],
       emoji: "☕",
-      image: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/11160146/pexels-photo-11160146.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Ristretto" },
         { icon: "🥛", name: "Buharlı Süt" }
@@ -344,7 +344,7 @@
       price: "70 TL",
       tags: ["Çikolata", "Tatlı"],
       emoji: "🍫",
-      image: "https://images.unsplash.com/photo-1582716401301-b2407dc7563d?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/11512983/pexels-photo-11512983.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso" },
         { icon: "🍫", name: "Çikolata Sosu" },
@@ -359,7 +359,7 @@
       price: "70 TL",
       tags: ["Soğuk İnfüzyon", "Yumuşak"],
       emoji: "🧊",
-      image: "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/2775860/pexels-photo-2775860.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Soğuk İnfüzyon Kahve" },
         { icon: "🧊", name: "Buz" }
