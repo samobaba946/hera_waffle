@@ -573,7 +573,7 @@
       price: "20 TL",
       tags: ["Geleneksel", "Sıcak"],
       emoji: "🍵",
-      image: "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/6975972/pexels-photo-6975972.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍃", name: "Siyah Çay" },
         { icon: "💧", name: "Sıcak Su" }
