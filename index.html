@@ -39,6 +39,40 @@
 
   <!-- ============== HERO ============== -->
   <section class="hero">
+    <!-- Chocolate drips: milk (left) + white (right), slowly slide down -->
+    <div class="choco-drips" aria-hidden="true">
+      <svg class="choco-drip choco-milk" viewBox="0 0 500 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="milkChocoGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#7a3a1c"/>
+            <stop offset="45%" stop-color="#6b2e14"/>
+            <stop offset="100%" stop-color="#3e1607"/>
+          </linearGradient>
+          <linearGradient id="milkChocoShine" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="rgba(255,210,160,0.55)"/>
+            <stop offset="100%" stop-color="rgba(255,210,160,0)"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#milkChocoGrad)" d="M0,0 L500,0 L500,30 C488,38 478,84 466,55 C454,26 440,120 422,82 C404,44 386,152 366,108 C346,64 330,38 314,52 C298,66 286,162 268,124 C250,86 234,40 216,46 C198,52 186,136 168,108 C150,80 136,50 118,56 C100,62 88,120 72,90 C56,60 42,36 28,40 C18,43 8,38 0,30 Z"/>
+        <path fill="url(#milkChocoShine)" opacity="0.6" d="M0,4 L500,4 L500,12 L0,14 Z"/>
+      </svg>
+      <svg class="choco-drip choco-white" viewBox="0 0 500 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="whiteChocoGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#fdf6e3"/>
+            <stop offset="50%" stop-color="#f3e2bd"/>
+            <stop offset="100%" stop-color="#d9bd8a"/>
+          </linearGradient>
+          <linearGradient id="whiteChocoShine" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="rgba(255,255,255,0.85)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#whiteChocoGrad)" d="M500,0 L0,0 L0,30 C12,38 22,84 34,55 C46,26 60,120 78,82 C96,44 114,152 134,108 C154,64 170,38 186,52 C202,66 214,162 232,124 C250,86 266,40 284,46 C302,52 314,136 332,108 C350,80 364,50 382,56 C400,62 412,120 428,90 C444,60 458,36 472,40 C482,43 492,38 500,30 Z"/>
+        <path fill="url(#whiteChocoShine)" opacity="0.7" d="M0,4 L500,4 L500,12 L0,14 Z"/>
+      </svg>
+    </div>
+
     <div class="hero-bg" aria-hidden="true">
       <div class="hero-blob blob-1"></div>
       <div class="hero-blob blob-2"></div>
