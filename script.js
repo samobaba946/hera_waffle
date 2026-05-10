@@ -437,7 +437,7 @@
       price: "70 TL",
       tags: ["Milkshake", "Çilek"],
       emoji: "🍓",
-      image: "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=900&q=80&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/10066814/pexels-photo-10066814.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍓", name: "Çilek" },
         { icon: "🍦", name: "Dondurma" },
