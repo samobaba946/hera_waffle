@@ -680,15 +680,15 @@
     {
       id: "kmp-waffle-kahve",
       category: "kampanya",
-      name: "Waffle + Türk Kahvesi",
-      desc: "Bir kova waffle yanında Türk kahvesi. Tatlının yanına geleneksel bir dokunuş — kampanya fiyatıyla.",
+      name: "Waffle + Kahve",
+      desc: "Bir kova waffle yanında kahve. Tatlının yanına aromalı bir dokunuş — kampanya fiyatıyla.",
       price: "220 TL",
       tags: ["Fırsat", "İkili"],
       emoji: "🎁",
-      image: "https://images.pexels.com/photos/5555534/pexels-photo-5555534.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/4686818/pexels-photo-4686818.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🧇", name: "Bardak Waffle (1 adet)" },
-        { icon: "☕", name: "Türk Kahvesi (1 adet)" }
+        { icon: "☕", name: "Kahve (1 adet)" }
       ]
     },
     {
@@ -699,7 +699,7 @@
       price: "230 TL",
       tags: ["Fırsat", "İkili"],
       emoji: "🎁",
-      image: "https://images.pexels.com/photos/28919130/pexels-photo-28919130.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/23708983/pexels-photo-23708983.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🧇", name: "Bardak Waffle (1 adet)" },
         { icon: "🍋", name: "Limonata (1 bardak)" }
