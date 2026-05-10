@@ -87,7 +87,7 @@
       image: "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=900&q=80&auto=format&fit=crop",
       ingredients: [
         { icon: "🤍", name: "Beyaz Çikolata" },
-        { icon: "🍓", name: "Çilek" }
+        { icon: "❤️", name: "Çilek" }
       ]
     },
     {
