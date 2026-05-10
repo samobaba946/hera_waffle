@@ -730,6 +730,65 @@
     });
   });
 
+  /* ---------- STRAWBERRY RAIN (Prenses özel efekti) ---------- */
+  (function injectStrawberryStyles() {
+    if (document.getElementById("strawberry-rain-styles")) return;
+    const style = document.createElement("style");
+    style.id = "strawberry-rain-styles";
+    style.textContent = `
+      .strawberry-rain-layer {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 99999;
+        overflow: hidden;
+      }
+      .strawberry-rain-layer span {
+        position: absolute;
+        top: -10vh;
+        will-change: transform, opacity;
+        animation-name: strawberryFall;
+        animation-timing-function: cubic-bezier(.4,.05,.7,1);
+        animation-fill-mode: forwards;
+        filter: drop-shadow(0 4px 6px rgba(107, 24, 32, 0.25));
+      }
+      @keyframes strawberryFall {
+        0%   { transform: translate3d(0, 0, 0) rotate(0deg);                    opacity: 0; }
+        8%   { opacity: 1; }
+        100% { transform: translate3d(var(--drift), 115vh, 0) rotate(var(--rot)); opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  })();
+
+  function rainStrawberries(count) {
+    const COUNT = count || 45;
+    const layer = document.createElement("div");
+    layer.className = "strawberry-rain-layer";
+    document.body.appendChild(layer);
+
+    for (let i = 0; i < COUNT; i++) {
+      const s = document.createElement("span");
+      s.textContent = "🍓";
+      const left   = Math.random() * 100;            // vw
+      const size   = 18 + Math.random() * 28;        // px
+      const dur    = 2.6 + Math.random() * 2.6;      // s
+      const delay  = Math.random() * 1.4;            // s
+      const rot    = ((Math.random() * 720) - 360) | 0;
+      const drift  = ((Math.random() * 120) - 60) | 0;
+      s.style.left = left + "vw";
+      s.style.fontSize = size + "px";
+      s.style.animationDuration = dur + "s";
+      s.style.animationDelay = delay + "s";
+      s.style.setProperty("--drift", drift + "px");
+      s.style.setProperty("--rot", rot + "deg");
+      layer.appendChild(s);
+    }
+
+    // cleanup after the longest possible animation finishes
+    setTimeout(() => layer.remove(), 7000);
+  }
+
   /* ---------- MODAL ---------- */
   function openModal(item) {
     modalEyebrow.textContent = categoryLabel[item.category] || "";
@@ -794,6 +853,11 @@
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
+
+    // Prenses → çilek yağmuru 🍓
+    if (item.id === "w-prenses") {
+      rainStrawberries();
+    }
   }
 
   function closeModal() {
