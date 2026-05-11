@@ -771,6 +771,7 @@
     items.forEach((item, i) => {
       const card = document.createElement("article");
       card.className = "menu-card";
+      card.dataset.id = item.id;
       card.style.animationDelay = `${0.06 * i}s`;
       card.setAttribute("role", "button");
       card.setAttribute("tabindex", "0");
