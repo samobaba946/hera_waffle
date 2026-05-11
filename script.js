@@ -80,7 +80,7 @@
     {
       id: "w-prenses",
       category: "waffle",
-      name: "Prensesim Zeynep",
+      name: "Prenses",
       desc: "Beyaz çikolata ve taze çileğin masal gibi uyumu. Zarif ve hafif, her ısırıkta romantizm.",
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Çilek"],
@@ -137,7 +137,7 @@
     {
       id: "w-marjinal",
       category: "waffle",
-      name: "Bebeğim Elif",
+      name: "Marjinal",
       desc: "Bubble ve frambuazın sıra dışı buluşması. Cesur damaklara özel, alışılmışın dışında bir deneyim.",
       formats: WAFFLE_FORMATS,
       tags: ["Bubble", "Frambuaz"],
