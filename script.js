@@ -137,7 +137,7 @@
     {
       id: "w-marjinal",
       category: "waffle",
-      name: "Marjinal",
+      name: "Bebeğim Elif",
       desc: "Bubble ve frambuazın sıra dışı buluşması. Cesur damaklara özel, alışılmışın dışında bir deneyim.",
       formats: WAFFLE_FORMATS,
       tags: ["Bubble", "Frambuaz"],
