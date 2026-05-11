@@ -79,7 +79,7 @@
     {
       id: "w-prenses",
       category: "waffle",
-      name: "Prenses",
+      name: "Prensesim Zeynep",
       desc: "Beyaz çikolata ve taze çileğin masal gibi uyumu. Zarif ve hafif, her ısırıkta romantizm.",
       formats: WAFFLE_FORMATS,
       tags: ["Beyaz Çikolata", "Çilek"],
