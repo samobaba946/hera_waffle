@@ -568,7 +568,7 @@
     {
       id: "c-siyah-cay",
       category: "cay",
-      name: "Siyah Çay",
+      name: "Klasik Çay",
       desc: "Demlikten taze süzülmüş, koyu ve aromatik geleneksel Türk çayı. İnce belli bardakta servis edilir.",
       price: "20 TL",
       tags: ["Geleneksel", "Sıcak"],
@@ -576,20 +576,6 @@
       image: "https://images.pexels.com/photos/6975972/pexels-photo-6975972.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "🍃", name: "Siyah Çay" },
-        { icon: "💧", name: "Sıcak Su" }
-      ]
-    },
-    {
-      id: "c-yesil-cay",
-      category: "cay",
-      name: "Yeşil Çay",
-      desc: "Hafif ve antioksidan dolu yeşil çay. Sade veya yasemin aromalı tercih edilebilir.",
-      price: "20 TL",
-      tags: ["Sağlıklı", "Hafif"],
-      emoji: "🍃",
-      image: "https://images.pexels.com/photos/8474187/pexels-photo-8474187.jpeg?auto=compress&cs=tinysrgb&w=900",
-      ingredients: [
-        { icon: "🍵", name: "Yeşil Çay" },
         { icon: "💧", name: "Sıcak Su" }
       ]
     },
