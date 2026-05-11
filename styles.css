@@ -538,13 +538,13 @@ ul, ol { list-style: none; }
    2 BARDAK WAFFLE — küçük görsel, etrafta boşluk
    ============================================ */
 .menu-card[data-id="kmp-2-waffle"] .card-image {
-  background: #f4f1ea;
+  background: #ffffff;
 }
 .menu-card[data-id="kmp-2-waffle"] .card-image img {
   object-fit: contain;
-  padding: 22px;
+  padding: 18px;
   box-sizing: border-box;
-  background: #f4f1ea;
+  background: #ffffff;
 }
 .menu-card[data-id="kmp-2-waffle"]:hover .card-image img {
   transform: scale(1.04);
