@@ -243,7 +243,7 @@
       price: "70 TL",
       tags: ["Dengeli", "Sütlü"],
       emoji: "☕",
-      image: "https://images.pexels.com/photos/4860407/pexels-photo-4860407.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "https://images.pexels.com/photos/12703064/pexels-photo-12703064.jpeg?auto=compress&cs=tinysrgb&w=900",
       ingredients: [
         { icon: "☕", name: "Espresso" },
         { icon: "🥛", name: "Buharlı Süt" }
